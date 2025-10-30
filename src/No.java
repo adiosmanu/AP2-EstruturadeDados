@@ -1,22 +1,17 @@
 public class No {
-    private Pedido pedido;
+    private Musica musica;
     private No proximo;
+    private No anterior;
 
-    public No(Pedido pedido){
-        this.pedido = pedido;
+    public No(Musica musica) {
+        this.musica = musica;
         this.proximo = null;
+        this.anterior = null;
     }
 
-    public Pedido getPedido(){
-        return pedido;
-    }
-
-    public No getProximo(){
-        return proximo;
-    }
-
-    public void setProximo(No proximo){
-        this.proximo = proximo;
-
-    }
+    public Musica getMusica() { return musica; }
+    public No getProximo() { return proximo; }
+    public void setProximo(No proximo) { this.proximo = proximo; }
+    public No getAnterior() { return anterior; }
+    public void setAnterior(No anterior) { this.anterior = anterior; }
 }
